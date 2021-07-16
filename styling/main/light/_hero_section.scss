@@ -1,0 +1,52 @@
+.hero_section{
+    position: relative;
+    height: 100vh;
+    margin: 0px 10vh 0px 10vh;
+    .images_for_hero{
+        position: absolute;
+        height: 75vh;
+        width: 45vw;
+        background-color: #DFDFDF;
+        //background-image: url(../assets/navigation_images/gameplay_image.jpg);
+        background-size: cover;
+    }
+    .text_for_hero{
+        top: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        height: 80vh;
+        width: 50vw;
+        h1{
+            width: 70vw;
+            font-size: 96px;
+            color: #212121;
+            font-weight: 600;
+            text-align: right;
+            span{
+                display: block;
+            }
+            span:last-child{
+                margin-top: -1vh;
+            }
+        }
+        p{
+            margin: 5vh 0px 0px 60vh;
+            width: 35vw;
+            font-size: 18px;
+        }
+        a{
+            text-decoration: none;
+            .startnow{
+                margin: 5vh 0px 0px 60vh;
+                border-radius: 5px;
+                width: 20vh;
+                height: 7vh;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(255, 96, 38);
+                color: #ffffff;
+            }
+        }
+    }
+}

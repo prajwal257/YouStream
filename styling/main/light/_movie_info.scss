@@ -1,0 +1,143 @@
+.movie_info_section{
+    .row_1{
+        margin-top: -20%;
+        background-image: linear-gradient(bottom, #f1f1f1, #00000000);
+        img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: -1;
+        }
+    }
+    .row_2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+        padding: 0vh 10vh 0vh 10vh;
+        .movie_thumbnail{
+            img{
+                width: auto;
+                height: 40vh;
+            }
+        }
+        .movie_information{
+            flex-basis: 60%;
+            margin-left: 5vh;
+            h1{
+                margin: 5vh 0vh 0vh 5vh;
+                font-weight: 500;
+            }
+            p{
+                margin: 5vh;
+                width: 35vw;
+            }
+            .movie_controls{
+                padding-left: 5vh;
+                display: flex;
+                a{
+                    text-decoration: none;
+                    margin-right: 3vh;
+                    cursor: pointer;
+                    button{
+                        border-radius: 3px;
+                        height: 7vh;
+                        width: 18vh;
+                        background-color: rgb(255, 114, 63);
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: white;
+                        transition: all 0.25s;
+                    }
+                    button:hover{
+                        background-color: rgb(255, 96, 38);
+                    }
+                }
+                a:last-child{
+                    button{
+                        background-color: transparent;
+                        border: 1px solid rgb(255, 114, 63);
+                        color: black;
+                    }
+                    button:hover{
+                        background-color: rgb(255, 96, 38);
+                        border: 0px solid grey;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .row_3{
+        .newly_arrived_section{
+            .head_text{
+                margin: 10vh;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .list_of_media{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .left_arrow{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    background-color: #cdcdcd;
+    
+                    visibility: hidden;
+                }
+                .list{
+                    height: 45vh;
+                    width: 85vw;
+                    display: flex;
+                    .item{
+                        margin-right: 5vw;
+                        text-decoration: none;
+                        height: 100%;
+                        flex-basis: 19%;
+                        .item_img{
+                            position: relative;
+                            border-radius: 100%;
+                            height: 70%;
+                            width: 100%;
+                            background-color: #cdcdcd;
+                            overflow: hidden;
+                            img{
+                                position: absolute;
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                        .item_desc{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            h4{
+                                margin-top: 5%;
+                                font-size: 16px;
+                                color: #161616;
+                            }
+                            p{
+                                margin-top: 3%;
+                                font-size: 14px;
+                                color: #161616;
+                            }
+                        }
+                    }
+                    .item:nth-child(1) {
+                        margin: 0px 5vw 0vh 0vh;
+                    }
+                }
+                .right_arrow{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    background-color: #cdcdcd;
+                    
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}

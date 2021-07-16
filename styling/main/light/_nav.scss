@@ -1,0 +1,172 @@
+.navigation_menu{
+    height: 0vh;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 5;
+    //background-color: #f5f5f5;
+    .row_1{
+        padding: 10vh 10vh 0px 10vh;
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                // mix-blend-mode: difference;
+            }
+        }
+        .close{
+            height: 3vh;
+            width: 3vh;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .row_2{
+        margin-top: 10vh;
+        padding: 0vh 10vh 0vh 10vh;
+        .list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .menu_option{
+                text-decoration: none;
+                flex-basis: 20%;
+                height: 60vh;
+                transition: all 0.25s ease-out;
+                position: relative;
+                overflow: hidden;
+                .option{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    transition: all 0.15s ease-out;
+                    background-color: transparent;
+                    color: #161616;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .sublist{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50%;
+                    transition: all 0.45s ease-out;
+                    .sublist_item{
+                        font-size: 24px;
+                        text-decoration: none;
+                        opacity: 0;
+                        font-weight: 400;
+                    }
+                }
+            } 
+            .menu_option:hover{
+                background-color: rgb(22, 22, 22);
+                .option{
+                    height: 50%;
+                    font-size: 28px;
+                    color: white;
+                    font-weight: 600;
+                }
+                .sublist{
+                    .sublist_item{
+                        font-size: 16px;
+                        margin-top: 8px;
+                        text-decoration: none;
+                        color: #f5f5f5a1;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.navigation_menu_active{
+    height: 100vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    // background-image: linear-gradient(to bottom, #0000008a, #f5f5f500), url("../assets/navigation_images/gamer_image-min.jpg");
+    // background-image: url(../assets/navigation_images/gameplay_image.jpg);
+    background-color: #f5f5f5;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+}
+nav{
+    position: relative;
+    z-index: 5;
+    height: 20vh;
+    padding: 0px 10vh 0px 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // backdrop-filter: blur(10px);
+    // background-image: linear-gradient(to bottom, #f1f1f100, rgba(241, 241, 241, 0.8));
+    // background-color: #f1f1f175;
+    a{
+        text-decoration: none;
+        h3{
+            color: #161616;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        img{
+            height: 3vh;
+            width: auto;
+        }
+    }
+    
+    .right_links{
+        display: flex;
+        .nav_element{
+            margin-left: 2vw;
+            .user{
+                height: 18px;
+                width: 18px;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        .search{
+            width: 8vw;
+            border-radius: 20px;
+            background-color: #f5f5f5;
+        }
+        ::placeholder{
+            font-size: 16px;
+            color: #c2c2c2;
+        }
+        .menu_trigger{
+            margin-left: 2vw;
+            height: 18px;
+            width: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            cursor: pointer;
+            .line_1{
+                height: 3px;
+                width: 100%;
+                background-color: #161616;
+            }
+            .line_2{
+                height: 3px;
+                width: 100%;
+                background-color: #161616;
+            }
+            .line_3{
+                height: 3px;
+                width: 100%;
+                background-color: #161616;
+            }
+        }
+    }
+}

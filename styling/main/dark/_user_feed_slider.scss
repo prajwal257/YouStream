@@ -1,0 +1,66 @@
+.head_text{
+    margin: 0vh 10vh 10vh 10vh;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+.slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Slideshow container */
+    .slideshow-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 50vh;
+        width: 85vw;
+        position: relative;
+        overflow: hidden;
+        .image{
+            width: 90vw;
+        }
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 1vh;
+        width: 1vh;
+        margin: 2vh 1vh;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        display: inline-block;
+        transition: all 250ms ease;
+    }
+    .dot:hover{
+        background-color: #000000;
+    }
+
+    .active{
+        width: 2vh;
+        background-color: #000000;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: .5s;
+        animation-name: fade;
+        animation-duration: .5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+}

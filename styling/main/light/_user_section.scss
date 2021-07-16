@@ -1,0 +1,157 @@
+.user_profile{
+    position: relative;
+    .user_images{
+        height: 50vh;
+        position: relative;
+        .cover_image{
+            background-image: linear-gradient(bottom, #f1f1f1, #00000000);
+            img{
+                margin-top: -25%;
+                position: relative;
+                z-index: -1;
+                height: auto;
+                width: 100%;
+            }
+        }
+        .profile_image{
+            position: absolute;
+            z-index: 10;
+            height: 35vh;
+            width: 35vh;
+            transform: translate(0,-50%);
+            right: 10vh;
+            border-radius: 100%;
+            background-color: #cecece;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            transition: all 0.25s;
+            img{
+                height: 70%;
+                width: 70%;
+            }
+            form{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 15vh;
+                width: 15vh;
+                border-radius: 100%;
+                transition: all 0.25s ease;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input{
+                    height: 50%;
+                    width: 50%;
+                    border-radius: 100%;
+                    background-color: black;
+                    display: none;
+                    background-image: url(../assets/nav_icons/close-dark.png);
+                    background-size: 50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                input::-webkit-file-upload-button {
+                    display: none;
+                }
+                button{
+                    height: 40%;
+                    width: 40%;
+                    font-weight: 18px;
+                    display: none;
+                    border-radius: 100%;
+                    background-color: rgb( 255, 137, 68);
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .profile_image:hover{
+            form{
+                background-color: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(5px);
+                input{
+                    display: block;
+                }
+                button{
+                    display: block;
+                }
+            }
+        }
+    }
+    .user_details{
+        position: relative;
+        margin-top: -5vh;
+        height: 30vh;
+        padding: 0vh 10vh 0vh 10vh;
+        h1{
+            margin-top: 5vh;
+            font-weight: 500;
+        }
+        p{
+            font-size: 24px;
+            margin-top: 3vh;
+            width: 30vw;
+            font-size: 14px;
+        }
+        .input_user_desc{
+            margin-top: 2vh;
+            display: flex;
+            justify-content: space-between;
+            width: 10vw;
+            input{
+                border-radius: 15px;
+                min-height: 5vh;
+                min-width: 15vw;
+                padding-left: 10px;
+            }
+            button{
+                display: none;
+            }
+            .button{
+                margin-left: 1vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                min-width: 7vw;
+                min-height: 1vw;
+                background-color: rgb( 255, 137, 68);
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+    .user_stats{
+        position: relative;
+        .head_text{
+            margin: 0vh 10vh 0vh 10vh;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    .user_stat_container{
+        margin: 3vh 10vh 0vh 10vh;
+        display: flex;
+        .user_stat_name{
+            h4{
+                font-weight: 500;
+                font-size: 14px;
+                margin-bottom: 1vh;
+            }
+        }
+        .user_stat_value{
+            margin-left: 3vh;
+            p{
+                font-size: 14px;
+                margin-bottom: 1vh;
+            }
+        }
+    }
+}

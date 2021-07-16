@@ -1,0 +1,187 @@
+.media_area{
+    position: relative;
+    margin-left: -5vw;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70% 30%;
+    grid-row-gap: 5vh;
+    padding: 0px 10vw 0px 10vw;
+    align-items: center;
+    width: 89vw;
+    .play_area{
+        grid-column: 1/4;
+        background-color: #DFDFDF;
+        height: 70vh;
+        background-color: grey;
+        margin-right: 2vw;
+        border-radius: 15px;
+        .movie_player{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+    .comment_area{
+        height: 70vh;
+        //width: 20vw;
+        // border: 1px solid #2b2b2b;
+        border-radius: 5px;
+        display: grid;
+        grid-template-rows: 10vh 90vh;
+        .buttons{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .like{
+                position: relative;
+                z-index: 10;
+                height: 100%;
+                flex-basis: 25%;
+                background-color: rgb(206, 206, 206);
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 30%;
+                    width: 30%;
+                }
+            }
+            .like:hover{
+                color: white;
+                background-color: rgb( 255, 137, 68);
+            }
+        }
+        .comment_section{
+            h1{
+                margin: 1vw;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .comments{
+                height: 45vh;
+                overflow-y: scroll;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .comment{
+                    margin: 1vw;
+                    background-color: #cecece;
+                    border-radius: 15px 15px 15px 0px;
+                    width: 90%;
+                    .user{
+                        margin: 10px;
+                        width: 40%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: space-around;
+                        .user_pic{
+                            height: 100%;
+                            background-color: white;
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            img{
+                                height: 70%;
+                                width: auto;
+                            }
+                        }
+                        .username{
+                            display: flex;
+                            align-items: center;
+                            color: #161616;
+                        }
+                    }
+                    .comment_text{
+                        font-size: 16px;
+                        padding: 2vh;
+                    }
+                    .buttons{
+                        margin: 0vh 0px 10px 40%;
+                        min-height: 25px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        .like{
+                            padding: 3px;
+                            font-size: 12px;
+                            background-color: white;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            img{
+                                height: 30%;
+                            }
+                        }
+                        .like:hover{
+                            color: white;
+                            background-color: rgb( 255, 137, 68);
+                        }
+                    }
+                }
+                .comment:nth-child(1){
+                    margin-top: 20vh;
+                }
+            }
+            .comments::-webkit-scrollbar{
+                width: 5px;
+            }
+            .comments::-webkit-scrollbar-thumb{
+                background-color: transparent;
+                transition: all 0.25s;
+            }
+            .addComment{
+                margin-top: 1vh;
+                height: 5vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .addComment{
+                    padding-left: 10px;
+                    border: 1px solid black;
+                    height: 80%;
+                    border-radius: 15px;
+                    flex-basis: 70%;
+                    background-color: transparent;
+                }
+                .submit{
+                    font-weight: 500;
+                    margin: 6px 0px 0px 5px;
+                    height: 90%;
+                    border-radius: 15px;
+                    flex-basis: 25%;
+                    color: #ffffff;
+                    background-color: rgb( 255, 137, 68);
+                }
+            }
+        }
+    }
+    .comment_area:hover{
+        .comment_section{
+            .comments::-webkit-scrollbar-thumb{
+                background-color: #161616;
+            }
+        }
+    }
+    .video_details{
+        grid-column: 1/5;
+        grid-row: 2;
+        h1{
+            font-size: 36px;
+            font-weight: 400;
+        }
+        p{
+            margin-top: 3vh;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+}

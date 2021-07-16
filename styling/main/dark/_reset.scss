@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Segoe UI;
+}
+body{
+    background-color: #161616;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #383838;
+}
