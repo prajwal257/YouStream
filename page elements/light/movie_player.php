@@ -89,13 +89,13 @@
     ?>
         <div class="buttons">
             <div class="like" <?php echo $liked_video; ?>>
-                <img src="../../assets/move-playing-icons/like-dark.png" alt="like this video">
+                <img src="../../assets/move-playing-icons/like-light.png" alt="like this video">
             </div>
             <div class="like" <?php echo $disliked_video; ?>>
-                <img src="../../assets/move-playing-icons/dislike-dark.png" alt="like this video">
+                <img src="../../assets/move-playing-icons/dislike-light.png" alt="like this video">
             </div>
             <div class="like" <?php echo $fav_video; ?>>
-                <img src="../../assets/move-playing-icons/add-dark.png" alt="like this video">
+                <img src="../../assets/move-playing-icons/add-light.png" alt="like this video">
             </div>
         </div>
         <div class="comment_section">
@@ -104,7 +104,7 @@
                 <div class="comment">
                     <div class="user">
                         <div class="user_pic">
-                            <img src="../../assets/nav_icons/user_account-dark.png" alt="user profile pic">
+                            <img src="../../assets/nav_icons/user_account-light.png" alt="user profile pic">
                         </div>
                         <div class="username">
                             User Name
@@ -115,17 +115,17 @@
                     </div>
                     <div class="buttons">
                         <div class="like">
-                            <img src="../../assets/move-playing-icons/like-dark.png" alt="like this video">
+                            <img src="../../assets/move-playing-icons/like-light.png" alt="like this video">
                         </div>
                         <div class="like">
-                            <img src="../../assets/move-playing-icons/dislike-dark.png" alt="like this video">
+                            <img src="../../assets/move-playing-icons/dislike-light.png" alt="like this video">
                         </div>
                     </div>
                 </div>
                 <div class="comment">
                     <div class="user">
                         <div class="user_pic">
-                            <img src="../../assets/nav_icons/user_account-dark.png" alt="user profile pic">
+                            <img src="../../assets/nav_icons/user_account-light.png" alt="user profile pic">
                         </div>
                         <div class="username">
                             User Name
@@ -136,10 +136,10 @@
                     </div>
                     <div class="buttons">
                         <div class="like">
-                            <img src="../../assets/move-playing-icons/like-dark.png" alt="like this video">
+                            <img src="../../assets/move-playing-icons/like-light.png" alt="like this video">
                         </div>
                         <div class="like">
-                            <img src="../../assets/move-playing-icons/dislike-dark.png" alt="like this video">
+                            <img src="../../assets/move-playing-icons/dislike-light.png" alt="like this video">
                         </div>
                     </div>
                 </div>

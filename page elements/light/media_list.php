@@ -1,11 +1,12 @@
 <?php
+    $model_layout_style = "";
     if(isset($_SESSION['userid'])){
         //this will be user feed page then.
-        $model_layout_style = 'style="margin-top: -114vh";';
+        //$model_layout_style = 'style="margin-top: -114vh";';
     }
     else{
         //this will be index page then.
-        $model_layout_style = 'style="margin-top: -144vh";';
+        //$model_layout_style = 'style="margin-top: -144vh";';
     }
 ?>
     <div class="hero_media_list">

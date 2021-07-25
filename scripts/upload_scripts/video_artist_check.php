@@ -42,7 +42,7 @@
             $location = "Location: ../../pages/dark/upload.php?";
         }
         //checking for any empty values.
-        if(empty($video->artist_name[$i]) ||empty($video->artist_desc[$i]) ||empty($video->artist_role[$i]) ||empty($video->artist_social[$i]) || empty($video->artist_profile[$i]['name']) || empty($video->artist_cover[$i]['name'])){
+        if(empty($video->artist_name[$i]) ||empty($video->artist_desc[$i]) ||empty($video->artist_role[$i]) || empty($video->artist_profile[$i]['name']) || empty($video->artist_cover[$i]['name'])){
             //$video->getArtistNew( 0 );
             header($location .'error=All the feilds are required for Artist 1 if you are inserting new Artist.' );
             exit();

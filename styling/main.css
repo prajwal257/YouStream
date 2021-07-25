@@ -852,9 +852,9 @@ form .submit_button:hover {
 }
 
 .hero_media_list .newly_arrived_section .list_of_media .list .model {
-  margin: -144vh 0px 0px -7vw;
+  margin: -0vh 0px 0px -7vw;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   height: 100vh;
   width: 100%;
@@ -1593,6 +1593,7 @@ footer {
   height: 100%;
   width: 100%;
   border-radius: 15px;
+  background-color: black;
 }
 
 .media_area .comment_area {

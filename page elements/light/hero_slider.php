@@ -2,15 +2,15 @@
         Welcome back, <?php $username = $_SESSION['username']; echo $username;   ?>
     </h2>
     <div class="slider">
-        <div class="slideshow-container">
+    <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="../../assets/slider_1.png" class="image">
+                <img src="../../assets/slider_images/slider_1.png" class="image">
             </div>
             <div class="mySlides fade">
-                <img src="../../assets/slider_2.png" class="image">
+                <img src="../../assets/slider_images/slider_2.png" class="image">
             </div>
             <div class="mySlides fade">
-                <img src="../../assets/background_3.jpg" class="image">
+                <img src="../../assets/slider_images/slider_3.png" class="image">
             </div>
         </div>
         

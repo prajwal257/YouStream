@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 
 include "../../page elements/dark/html.php";
 include "../../page elements/dark/navigation.php";
